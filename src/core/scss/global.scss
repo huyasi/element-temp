@@ -1,0 +1,131 @@
+@charset 'utf-8';
+////
+/// 原子类型样式
+///
+/// 使用方法：不能重新定义/重置本文件内样式(除了项目差异)
+///
+/// @group undefined
+/// @author hys
+////
+// single attribute
+// -----------------------------------------------------------------------------
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.vhidden {
+    visibility: hidden;
+}
+.ng-hide {
+    display: none !important;
+}
+
+.ng-show {
+    display: block !important;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.w {
+    margin: auto;
+    width: 1200px;
+}
+
+.primary-c {
+    color: $primary-c !important;
+}
+
+.op0 {
+    opacity: 0;
+}
+
+.red {
+    color: $red !important;
+}
+
+// clear float
+// -----------------------------------------------------------------------------
+.clear {
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: '\0020';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+// 多行显示
+// -----------------------------------------------------------------------------
+.auto-line {
+    white-space: normal !important;
+}
+
+// 文本限制显示
+// -----------------------------------------------------------------------------
+// .one-line,
+.two-line,
+.three-line {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+
+    -webkit-box-orient: vertical;
+}
+
+// 单行显示
+// -----------------------------------------------------------------------------
+.one-line {
+    overflow: hidden;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+
+    -o-text-overflow: ellipsis;
+}
+
+// 2行显示
+// -----------------------------------------------------------------------------
+.two-line {
+    -webkit-line-clamp: 2;
+}
+
+// 3行显示
+// -----------------------------------------------------------------------------
+.three-line {
+    -webkit-line-clamp: 3;
+}
